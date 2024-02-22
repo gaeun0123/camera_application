@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>background</class>
+ <widget class="QDialog" name="background">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>784</width>
+    <width>783</width>
     <height>689</height>
    </rect>
   </property>
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>40</y>
+     <y>10</y>
      <width>781</width>
-     <height>381</height>
+     <height>551</height>
     </rect>
    </property>
    <property name="text">
@@ -29,11 +29,30 @@
   <widget class="QPushButton" name="startButton">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>440</y>
+     <x>350</x>
+     <y>530</y>
      <width>89</width>
-     <height>31</height>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>FontAwesome</family>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;   
+    background-color: red;  
+    border-style: solid;
+    border-width: 2px;
+}
+</string>
    </property>
    <property name="text">
     <string>start</string>
@@ -42,8 +61,8 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>430</y>
+     <x>20</x>
+     <y>570</y>
      <width>201</width>
      <height>80</height>
     </rect>
@@ -84,24 +103,24 @@
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="changeButton">
+  <widget class="QPushButton" name="effortButton">
    <property name="geometry">
     <rect>
      <x>680</x>
-     <y>490</y>
+     <y>610</y>
      <width>89</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>색</string>
+    <string>effort</string>
    </property>
   </widget>
   <widget class="QPushButton" name="openButton">
    <property name="geometry">
     <rect>
      <x>680</x>
-     <y>530</y>
+     <y>650</y>
      <width>89</width>
      <height>31</height>
     </rect>
@@ -110,6 +129,28 @@
     <string>file</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>560</y>
+     <width>791</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>videoScreen</zorder>
+  <zorder>startButton</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>effortButton</zorder>
+  <zorder>openButton</zorder>
  </widget>
  <resources/>
  <connections/>
